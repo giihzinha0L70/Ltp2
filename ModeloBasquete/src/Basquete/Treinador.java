@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Basquete;
 
 /**
@@ -10,5 +6,33 @@ package Basquete;
  * @author 363707
  */
 public class Treinador {
+    private String nome;
+    private Estatisticas estatisticas;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Estatisticas getEstatisticas() {
+        return estatisticas;
+    }
+
+    public void setEstatisticas(Estatisticas estatisticas) {
+        this.estatisticas = estatisticas;
+    }
     
+    public Treinador(String nome, Estatisticas estatisticas){
+        this.nome=nome;
+        this.estatisticas=estatisticas;
+    }
+    
+    @Override
+    public String toString(){
+        return  "\n Nome:" + getNome()+
+                "\n Estatísticas:" + getEstatisticas();
+    }
 }
