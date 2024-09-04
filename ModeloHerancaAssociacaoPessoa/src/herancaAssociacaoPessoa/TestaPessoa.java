@@ -17,8 +17,13 @@ public class TestaPessoa {
                                 new Fornecedor ("25687", "Construa Mat"))));
         System.out.println(M);
         
-        Engenheiro(String nome, String CREA, Obra obra);
-        
+        Engenheiro E = new Engenheiro("Jorge","12345-DF", 
+                new Obra ("Você paga pela qualidade", "Rua das Flores - 16", 
+                        new Material ("tijolos", 500, 
+                                new Fornecedor ("6935-521", "Só Tijolos")), 
+                        new Cliente ("Maria Soares da Silva", "261.998.765-35", "Maria da Conceição, casa 05")));
+        System.out.println(E);
+      
     }
     
 }
