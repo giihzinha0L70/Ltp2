@@ -2,8 +2,10 @@
 package ModeloProcedimento;
 
 /**
- *
- * @author yurif
+ * Escola Técnica de Brasília - ETB
+ * Professor: Vinícius
+ * Aluna: Giovanna Gomes
+ * Turma:3E
  */
 public class Testa {
 
