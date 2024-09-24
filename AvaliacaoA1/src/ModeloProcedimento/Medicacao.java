@@ -43,8 +43,7 @@ public class Medicacao extends Procedimento{
     
     @Override
     public String toString(){
-        return  "\n --- Sobre a Medicacao ---"+
-                "\n Número:" + getNumero()+
+        return  "\n Número:" + getNumero()+
                 "\n Descrição:" + getDescricao()+
                 "\n Valor:" + getValor()+
                 "\n Finalidade:" + getFinalidade()+

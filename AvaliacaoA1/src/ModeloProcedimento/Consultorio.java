@@ -32,8 +32,7 @@ public class Consultorio {
     
     @Override
     public String toString(){
-        return  "---- Sobre o Consultório ---"+
-                "\n Número:" + getNumero()+
+        return  "\n Número:" + getNumero()+
                 "\n Localização:" + getLocalizacao();
     }
 }

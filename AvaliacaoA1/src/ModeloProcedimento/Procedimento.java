@@ -42,7 +42,8 @@ public class Procedimento {
     
     @Override
     public String toString(){
-        return  "\n Número:" + getNumero()+
+        return  "\n --- PROCEDIMENTO ---"+
+                "\n Número:" + getNumero()+
                 "\n Descrição:" + getDescricao()+
                 "\n Valor:" + getValor();
     }

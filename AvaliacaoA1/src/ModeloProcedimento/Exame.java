@@ -33,8 +33,7 @@ public class Exame extends Procedimento{
     
     @Override
     public String toString(){
-        return  "\n --- Sobre o Exame ---"+
-                "\n Número:" + getNumero()+
+        return  "\n Número:" + getNumero()+
                 "\n Descrição:" + getDescricao()+
                 "\n Valor:" + getValor()+
                 "\n Data:" + getData()+

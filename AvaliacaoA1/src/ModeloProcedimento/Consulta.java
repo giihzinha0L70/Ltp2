@@ -43,8 +43,7 @@ public class Consulta extends Procedimento{
     
     @Override
     public String toString(){
-        return  "\n --- Sobre a Consulta --- "+
-                "\n Número:" + getNumero()+
+        return  "\n Número:" + getNumero()+
                 "\n Descrição:" + getDescricao()+
                 "\n Valor:" + getValor()+
                 "\n Data:" + getData()+
