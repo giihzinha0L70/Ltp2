@@ -8,7 +8,7 @@ package ModeloProduto;
 public abstract class Produto {
     private String codBarra;
     private String descricao;
-    private Double preco;
+    protected Double preco;
     private Fornecedor fornecedor;
     private Fisica fisica;
 
@@ -61,8 +61,8 @@ public abstract class Produto {
     }
     
     @Override
-    public abstract String toString();
-    public abstract Double precoFinal();
-    public abstract Double icms();
-    public abstract Double ipi();
+    public abstract String toString(); 
+    public abstract Double precoFinal(); 
+    public abstract Double icms(); 
+    public abstract Double ipi();     
 }

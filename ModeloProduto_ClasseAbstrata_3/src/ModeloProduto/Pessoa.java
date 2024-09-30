@@ -71,7 +71,7 @@ public abstract class Pessoa {
     }
     
     @Override
-    public abstract String toString();
-    public abstract Double pesoIdeal();
+    public abstract String toString(); 
+    public abstract Double pesoIdeal(); 
     public abstract int idade();
 }

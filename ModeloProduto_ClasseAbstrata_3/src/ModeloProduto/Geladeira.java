@@ -31,15 +31,32 @@ public class Geladeira extends Produto{
         this.qtdPortas=qtdPortas;
     }
     
-    public Double precoFinal() {
-        return preco + icms() + ipi();
-    }
-
+     @Override
     public Double icms() {
-        return preco * TAXA_ICMS;
+        return (0.1);
     }
-
+    
+    @Override
     public Double ipi() {
-        return preco * TAXA_IPI;
+        return (0.55);
     }
+    
+    @Override
+    public Double precoFinal() {
+        return (preco + icms() + ipi());
+    }
+    
+    @Override
+    public String toString() {
+        return "\n\n --- Dados do Produto: Geladeira ---"+
+                "\n Código de Barra:" + getCodBarra()+
+                "\n Descrição:" + getDescricao()+
+                "\n Preço:" + getPreco()+
+                "\n\n --- Dados do Fornecedor ---" + getFornecedor()+
+                "\n\n --- Dados da Pessoa Fisica ---" + getFisica()+
+                "\n Marca:" + getMarca()+
+                "\n Quantidade das Portas:" + getQtdPortas();
+               
+    }
+    
 }

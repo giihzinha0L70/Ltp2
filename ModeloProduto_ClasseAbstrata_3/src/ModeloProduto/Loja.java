@@ -8,10 +8,10 @@ package ModeloProduto;
 public class Loja {
     private String cnpj;
     private String nome;
-    private Fogao fogao;
     private Geladeira geladeira;
+    private Fogao fogao;
     private MaquinaLavar maquinaLavar;
-  
+
     public String getCnpj() {
         return cnpj;
     }
@@ -28,20 +28,20 @@ public class Loja {
         this.nome = nome;
     }
 
-    public Fogao getFogao() {
-        return fogao;
-    }
-
-    public void setFogao(Fogao fogao) {
-        this.fogao = fogao;
-    }
-
     public Geladeira getGeladeira() {
         return geladeira;
     }
 
     public void setGeladeira(Geladeira geladeira) {
         this.geladeira = geladeira;
+    }
+
+    public Fogao getFogao() {
+        return fogao;
+    }
+
+    public void setFogao(Fogao fogao) {
+        this.fogao = fogao;
     }
 
     public MaquinaLavar getMaquinaLavar() {
@@ -52,7 +52,7 @@ public class Loja {
         this.maquinaLavar = maquinaLavar;
     }
     
-    public Loja(String cnpj, String nome, Geladeira geladeira, Fogao fogao,  MaquinaLavar maquinaLavar){
+    public Loja(String cnpj, String nome, Geladeira geladeira, Fogao fogao, MaquinaLavar maquinaLavar){
         this.cnpj=cnpj;
         this.nome=nome;
         this.geladeira=geladeira;
@@ -60,12 +60,12 @@ public class Loja {
         this.maquinaLavar=maquinaLavar;
     }
     
-    @Override
-    public String toString(){
-        return  "\n CNPJ:" + getCnpj()+
-                "\n Nome:" + getNome()+
+     @Override
+    public String toString() {
+        return  "\n CNPJ: "+getCnpj()+
+                "\n Nome: "+getNome()+
                 "\n Geladeira:" + getGeladeira()+
-                "\n Fogão:" + getFogao()+
+                "\n Fogão:" +  getFogao()+
                 "\n Máquina de Lavar:" + getMaquinaLavar();
     }
 }

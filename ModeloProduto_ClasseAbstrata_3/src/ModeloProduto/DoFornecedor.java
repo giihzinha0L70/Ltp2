@@ -22,15 +22,17 @@ public class DoFornecedor extends NotaFiscal{
    } 
    
     @Override
-   public String toString(){
-       return  "\n Número:" + getNumero()+
-               "\n Data:" + getData()+
-               "\n Valor Inicial:"+  getValorInicial()+
-               "\n Data de Validade:" + getValorInicial();       
-   }
-
-    @Override
-    public Double valorFinal() {
-        return  (valorInicial * 7.2);        
+    public Double valorFinal(){
+        return (valorInicial * 0.72);
     }
+    
+    @Override
+    public String toString() {
+        return "\n\n --- Dados da Nota Fiscal do Fornecedor ---"+
+                "\n Número:" + getNumero()+
+                "\n Data:" + getData()+
+                "\n Valor Inicial:" + getValorInicial()+
+                "\n Data da Validade:" + getDataValidade();
+    }
+     
 }
