@@ -37,6 +37,6 @@ public class TransacaoCartao {
     @Override
     public String toString(){
         return  "\n Número:" + getNumero()+
-                "\n Valor:" + getValor();
+                "\n\n Valor:" + getValor();
     }
 }

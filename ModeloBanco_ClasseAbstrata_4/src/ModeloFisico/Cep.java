@@ -22,6 +22,6 @@ public class Cep {
     
     @Override
     public String toString(){
-        return  "\n Número:" +  getNumero();
+        return  "\n\n Número:" +  getNumero();
     }
 }

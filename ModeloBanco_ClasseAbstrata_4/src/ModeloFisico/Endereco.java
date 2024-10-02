@@ -44,6 +44,6 @@ public class Endereco {
     public String toString(){
         return  "\n Rua:" + getRua()+
                 "\n Número:" + getNumero()+
-                "\n CEP:" + getCep();
+                "\n\n CEP:" + getCep();
     }
 }

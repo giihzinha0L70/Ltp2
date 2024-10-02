@@ -59,6 +59,6 @@ public class CartaoCredito {
         return  "\n Número:" + getNumero()+
                 "\n Data de Criação:" + getDataCriacao()+
                 "\n Valor da Compra:" + getValorDaCompra()+
-                "\n Transação do Cartão:" + getTransacaoCartao();
+                "\n\n Transação do Cartão:" + getTransacaoCartao();
     }
 }

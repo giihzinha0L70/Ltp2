@@ -6,11 +6,11 @@ package ModeloFisico;
  * @author 363707
  */
 public abstract class Pessoa {
-    private Double saldo;
+    protected static Double saldo;
     private String nome;
     private String telefone;
     private Double limite;
-    private Double valorGasto;
+    protected static Double valorGasto;
     private Endereco endereco;
     private CartaoCredito cartaoCredito;
     private Conta conta;
@@ -79,4 +79,19 @@ public abstract class Pessoa {
         this.conta = conta;
     }
     
+    public Pessoa(Double saldo, String nome, String telefone, Double limite, 
+                    Double valorGasto, Endereco endereco, CartaoCredito cartaoCredito, Conta conta){
+        
+        this.saldo=saldo;
+        this.nome=nome;
+        this.telefone=telefone;
+        this.limite=limite;
+        this.valorGasto=valorGasto;
+        this.endereco=endereco;
+        this.cartaoCredito=cartaoCredito;
+        this.conta=conta;
+    }
+    
+    @Override
+    public abstract String toString();
 }
