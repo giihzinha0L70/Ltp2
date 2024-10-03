@@ -25,7 +25,19 @@ public class Atendente extends Funcionario{
         this.fisica = fisica;
     }
     
-    public Atendente(){
-        
+    public Atendente(int matricula, String nome, Double salario, Endereco endereco, String setor, Fisica fisica){
+        super(matricula, nome, salario, endereco);
+        this.setor=setor;
+        this.fisica=fisica;
+    }
+    
+    @Override
+    public String toString(){
+        return  "\nMatrícula:" + getMatricula()+
+                "\nNome:" + getNome()+
+                "\nSalário:" + getSalario()+
+                "\nEndereço:" + getEndereco()+
+                "\nSetor:" + getSetor()+
+                "\nFísica:" + getFisica();
     }
 }
