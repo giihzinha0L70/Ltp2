@@ -46,8 +46,8 @@ public class Deducao {
     
     @Override
     public String toString(){
-        return  "\n Código:" + getCodigo()+
-                "\n Descrição:" + getDescricao()+
-                "\n Valor:" + getValor();
+        return  "\nCódigo:" + getCodigo()+
+                "\nDescrição:" + getDescricao()+
+                "\nValor:" + getValor();
     }
 }

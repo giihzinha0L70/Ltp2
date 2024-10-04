@@ -32,7 +32,7 @@ public class Endereco {
     
     @Override
     public String toString(){
-        return  "\n Rua:" + getRua()+
-                "\n Número:" + getNumero();
+        return  "\nRua:" + getRua()+
+                "\nNúmero:" + getNumero();
     }
 }

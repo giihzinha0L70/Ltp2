@@ -46,8 +46,8 @@ public class Pagamento {
     
     @Override
     public String toString(){
-        return  "\n  Código:" + getCodigo()+
-                "\n Descrição:" + getDescricao()+
-                "\n Valor:" + getValor();
+        return  "\n Código:" + getCodigo()+
+                "\nDescrição:" + getDescricao()+
+                "\nValor:" + getValor();
     }
 }
