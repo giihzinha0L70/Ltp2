@@ -22,8 +22,8 @@ public class Impressao extends Servico{
     }
     
     @Override
-    public Double TotalPagar(){
-        return(valorImpressao * qtdPaginaImpressa);
+    public Double totalPagar(){
+        return(valorImpressao * Cliente.qtdPaginaImpressa);
     }
     @Override
     public String toString(){

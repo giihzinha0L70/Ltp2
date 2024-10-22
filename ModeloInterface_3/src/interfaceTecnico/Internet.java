@@ -22,6 +22,11 @@ public class Internet extends Servico implements HoraExtra{
     }
     
     @Override
+    public Double totalPagar(){
+        return(valorHora * QTDHORAEXTRA);
+    }
+    
+    @Override
     public String toString(){
         return  "\nNome:"+ getNome()+
                 "\nValor por Hora:"+ getValorHora()+

@@ -7,7 +7,7 @@ package interfaceTecnico;
  */
 public class Cliente extends Pessoa{
     private Double horasGastas;
-    private int qtdPaginaImpressa;
+    protected static int qtdPaginaImpressa;
     private Internet internet;
     private Impressao impressao;
 
@@ -43,7 +43,22 @@ public class Cliente extends Pessoa{
         this.impressao = impressao;
     }
     
-    public Cliente(Double horasGastas, int qtdPaginaImpressa, Internet internet, Impressao impressao){
-        super();
+    public Cliente(String cpf, String nome, Endereco endereco, Double horasGastas, int qtdPaginaImpressa, Internet internet, Impressao impressao){
+        super(cpf, nome, endereco);
+        this.horasGastas=horasGastas;
+        this.qtdPaginaImpressa=qtdPaginaImpressa;
+        this.internet=internet;
+        this.impressao=impressao;
+    }
+    
+    @Override
+    public String toString(){
+        return  "\nCPF:"+ getCpf()+
+                "\nNome:"+ getNome()+
+                "\nEndereço:"+ getEndereco()+
+                "\nHoras Gastas:"+ getHorasGastas()+
+                "\nQuantidade de Páginas Impressas:"+ getQtdPaginaImpressa()+
+                "\nInternet:"+ getInternet()+
+                "\nImpressão:"+ getImpressao();
     }
 }

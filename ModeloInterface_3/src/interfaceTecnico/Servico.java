@@ -20,10 +20,9 @@ public abstract class Servico {
         this.nome=nome;
     }
     
-    public Double TotalPagar(){
-        return(valorHora * QTDHORAEXTRA);
-    }
-    
+    public abstract Double totalPagar();            
+            
     @Override
     public abstract String toString();
 }
+
